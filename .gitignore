@@ -1,0 +1,22 @@
+# 擴充功能打包檔案
+propaganda_marker_extension.zip
+
+# 發佈資料夾
+dist/
+
+# 系統檔案
+.DS_Store
+Thumbs.db
+
+# 編輯器檔案
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 日誌檔案
+*.log
+
+# 暫存檔案
+*.tmp
+*.temp 

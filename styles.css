@@ -1,0 +1,74 @@
+/* 外宣標記器 - 樣式 */
+
+/* 標記為外宣的搜尋結果 - 統一基礎樣式 */
+.propaganda-marked {
+    background-color: #ffe6e6 !important; /* 粉紅色背景 */
+    border: 2px solid #cc0000 !important; /* 深紅色邊框 */
+    border-radius: 4px !important;
+    position: relative !important;
+    margin: 2px 0 !important;
+    padding: 8px !important;
+    /* 效能優化：避免重排 */
+    transform: translateZ(0);
+    will-change: auto;
+}
+
+/* 警告標籤 */
+.propaganda-warning {
+    position: absolute !important;
+    top: 5px !important;
+    right: 5px !important;
+    background: #ff0000 !important;
+    color: white !important;
+    padding: 2px 6px !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
+    border-radius: 3px !important;
+    z-index: 1000 !important;
+    pointer-events: none !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3) !important;
+    /* 效能優化 */
+    transform: translateZ(0);
+}
+
+/* 懸停效果 */
+.propaganda-marked:hover {
+    background-color: #ffcccc !important;
+    border-color: #990000 !important;
+    box-shadow: 0 2px 8px rgba(204,0,0,0.3) !important;
+}
+
+/* 確保警告標籤在懸停時仍然可見 */
+.propaganda-marked:hover .propaganda-warning {
+    background: #cc0000 !important;
+}
+
+/* 動畫效果 - 只在首次標記時播放 */
+@keyframes propagandaAlert {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.propaganda-marked {
+    animation: propagandaAlert 0.3s ease-in-out;
+}
+
+/* 確保在深色模式下也能清楚顯示 */
+@media (prefers-color-scheme: dark) {
+    .propaganda-marked {
+        background-color: #4a1a1a !important;
+        border-color: #ff6666 !important;
+    }
+    
+    .propaganda-warning {
+        background: #ff6666 !important;
+        color: #000 !important;
+    }
+}
+
+/* 效能優化：減少重繪 */
+.propaganda-marked * {
+    /* 避免子元素的重繪影響父元素 */
+    contain: layout style paint;
+} 
