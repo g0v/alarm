@@ -3,6 +3,7 @@
   "name": "外宣標記器",
   "version": "1.0",
   "description": "標記搜尋引擎結果中可能的外宣內容",
+  "id": "propaganda-marker@extension",
   "permissions": [
     "activeTab",
     "storage"
