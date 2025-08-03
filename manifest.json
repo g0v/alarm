@@ -3,7 +3,12 @@
   "name": "外宣標記器",
   "version": "1.0",
   "description": "標記搜尋引擎結果中可能的外宣內容",
-  "id": "propaganda-marker@extension",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "propaganda-marker@extension",
+      "strict_min_version": "109.0"
+    }
+  },
   "permissions": [
     "activeTab",
     "storage"
