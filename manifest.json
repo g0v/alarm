@@ -20,6 +20,7 @@
         "*://www.google.com.tw/*",
         "*://www.bing.com/*",
         "*://www.yahoo.com/*",
+        "*://tw.search.yahoo.com/*",
         "*://www.yahoo.com.tw/*",
         "*://search.yahoo.com/*",
         "*://www.baidu.com/*",
