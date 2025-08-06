@@ -2,6 +2,10 @@
 
 這是一個 Chrome 和 Firefox 瀏覽器擴充功能，用於自動標記搜尋引擎結果中可能的外宣內容。
 
+Firefox 連結: https://addons.mozilla.org/zh-TW/firefox/addon/%E5%A4%96%E5%AE%A3%E6%A8%99%E8%A8%98%E5%99%A8/
+
+Chrome 連結: (送審中)
+
 ## 功能特色
 
 - 🔍 **自動檢測**：在搜尋引擎結果中自動檢測包含外宣機構名稱的網頁
